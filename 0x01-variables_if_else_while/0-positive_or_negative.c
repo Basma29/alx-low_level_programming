@@ -2,28 +2,25 @@
 #include <stdlib.h>
 #include <time.h>
 
-
 /**
-* main -  prints whether the number stored in the variable n is positive or negative.
+* main - entry point 
 *
-* Return: Always 0 (Success)
+* Description: false or true validation 
+*
+* Return:  0 (Success)
 */
+
 int main(void)
-{ 
-        int n;
-        srand(time(0));
+{
+	int n;
+
+	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-      if (n > 0)
-       {
- 	printf("is positive");
-       }
-     else if (n == 0)
-   {
-     printf("is zero");
-   }
-else 
-   {
-      printf("is negative");
-   }
-return (0); 
+	if (n > 0)
+		printf("%i is positive\n", n);
+	else if (n == 0)
+		printf("%i is zero\n", n);
+	else 
+		printf("%i is negative\n", n);
+	return (0);
 }	
