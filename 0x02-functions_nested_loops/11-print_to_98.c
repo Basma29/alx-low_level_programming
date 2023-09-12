@@ -14,12 +14,12 @@ for (i = n; i <= 98; i++)
 {
 if (i == 98)
 {
-printf("%d", i);
+_putchar(i);
 break;
 }
-printf("%d", i);
-printf(",");
-printf(" ");
+_putchar(i);
+_putchar(",");
+_putchar(" ");
 }
 }
 else
@@ -28,12 +28,12 @@ for (i = n; i <= n; i--)
 {
 if (i == 98)
 {
-printf("%d", i);
+_putchar(i);
 break;
 }
-printf("%d", i);
-printf(",");
-printf(" ");
+_putchar(i);
+_putchar(",");
+_putchar(" ");
 }
 }
 }
